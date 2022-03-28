@@ -1,0 +1,43 @@
+.square {
+    margin: 0 auto;
+    height: 80px;
+    width: 80px;
+    border: solid rgb(13, 82, 72) 3px;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(133, 187, 192);
+    color: rgb(165, 19, 19);
+    transition: 4s;
+    border-radius: 10px 10px 10px 10px;
+}
+.square:hover {
+    animation: textrotate 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; 
+    height: 200px;
+    width: 200px;
+    background-color: rgb(173, 110, 144);
+    font-size: 36px;
+    color: aqua;
+    border: solid rgb(32, 112, 216) 6px;
+    border-radius: 60px 10px 60px 10px;
+}
+.square:hover .a {
+    display: none;
+  }
+.square .b {
+    display: none;
+  }
+  .square:hover .b {
+    display: inline;
+  }
+  @keyframes textrotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+ 
+  
+
+
